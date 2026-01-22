@@ -2,15 +2,16 @@
 using namespace std;
 
 int main(){
-    int n=20;
+    int n;
     int oddSum=0;
+    cout<<"Enter a Number: ";
+    cin>>n;
 
     for(int i=1; i<=n;i++){
-        if(i%2==0){
+        if(i%2!=0){
         oddSum +=i;
         }
     }
-    cout<<oddSum<<endl;
+    cout<<"oddSum = "<<oddSum<<endl;
     return 0;
 }
-
